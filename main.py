@@ -18,7 +18,7 @@ print("Request:{}".format(r))
 resp = api.request(r)
 print(type(resp))
 
-# print("Response:\n{}".format(json.dumps(resp, indent=2)))
+print("Response:\n{}".format(json.dumps(resp["trades"], indent=2)))
 
 print(resp["trades"][0]["id"])
 tradeID = resp["trades"][0]["id"]
